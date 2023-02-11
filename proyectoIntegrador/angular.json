@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ProyectoIntegrador_Fuentes": {
+    "proyectoIntegrador": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/proyecto-integrador-fuentes",
+            "outputPath": "dist/proyecto-integrador",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ProyectoIntegrador_Fuentes:build:production"
+              "browserTarget": "proyectoIntegrador:build:production"
             },
             "development": {
-              "browserTarget": "ProyectoIntegrador_Fuentes:build:development"
+              "browserTarget": "proyectoIntegrador:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ProyectoIntegrador_Fuentes:build"
+            "browserTarget": "proyectoIntegrador:build"
           }
         },
         "test": {
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "75fe9219-1096-4340-a34e-42cf4fb56bdf"
   }
 }
