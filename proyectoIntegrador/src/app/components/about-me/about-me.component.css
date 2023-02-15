@@ -1,0 +1,59 @@
+/*Estilo general de acerca de mi*/
+div{
+    background-color: #D6AE93;
+    text-align: center;
+}
+/*Estilo foto de perfil*/
+@media (min-width:576px){
+    #fotoPerfil{
+        border-radius: 55%;
+        box-shadow: gray 3px 3px 3px;
+        left: 40px;
+        margin-top: 2px;
+    }
+}
+@media (max-width:575px){
+    #fotoPerfil{
+        border-radius: 55%;
+        width: 40%;
+        box-shadow: gray 3px 3px 3px;
+        margin-top: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+/*Estilos de nombre y titulo*/
+@media (min-width:576px){
+    #nombre{
+        font-weight: bold;
+        font-family: Georgia, serif;
+        font-style: italic;
+        margin-top: 15%;
+    }
+    #titulo{
+        font-weight: bold;
+        font-family: 'Courier New', monospace;
+    }
+}
+@media (max-width:575px){
+    #nombre{
+        font-weight: bold;
+        font-family: Georgia, serif;
+        font-style: italic;
+        margin-top: 3%;
+    }
+    #titulo{
+        font-weight: bold;
+        font-family: 'Courier New', monospace;
+    }
+}
+#aboutMe{
+    font-weight: bold;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-top: 3%;
+}
+#texto{
+    text-align: justify;
+}
