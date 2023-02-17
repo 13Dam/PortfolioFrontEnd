@@ -1,7 +1,22 @@
-header{
+.row{
     background-color: #81929a;
 }
-app-redes{
+#logoAP{
+    width: 155px;
+}
+#redes{
     float: right;
-    margin-top: 25px;
+    margin-top: 1%;
+}
+a img{
+    width: 50px;
+    padding: 4px;
+    -webkit-transition: -webkit-transform 0.1s ease-in-out 0.1s;
+    -moz-transition: -moz-transform 0.1s ease-in-out 0.1s;
+    -o-transition: -o-transform 0.1s ease-in-out 0.1s;
+}
+a img:hover{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
 }
