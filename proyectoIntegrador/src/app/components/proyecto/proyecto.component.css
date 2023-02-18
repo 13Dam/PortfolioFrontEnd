@@ -1,0 +1,12 @@
+.row{
+    padding: 15px;
+    background-color: #a1b5cb;
+}
+h1{
+    position: relative;
+    left:20px;
+    border-bottom: 4px groove #6b777e;
+}
+.contenedor{
+    padding: 10px;
+}
