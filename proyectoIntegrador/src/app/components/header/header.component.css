@@ -2,11 +2,29 @@
     background-color: #81929a;
 }
 #logoAP{
-    width: 155px;
+    width: 140px;
 }
-#redes{
-    float: right;
-    margin-top: 1%;
+svg{
+    margin-right: 3px;
+}
+#iconoI{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#iconoD{
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 70px;
+}
+li{
+    display: inline-block;
+}
+.nav-link{
+    font-family: Georgia, serif;
+}
+.btn{
+    border-width: 2px;
+    margin-left: 15px;
 }
 a img{
     width: 50px;

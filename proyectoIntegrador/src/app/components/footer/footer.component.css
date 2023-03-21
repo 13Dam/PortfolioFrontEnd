@@ -1,3 +1,20 @@
 .row{
     background-color: #798991;
+    border-top: 4px ridge #6b777e;
+}
+img {
+    margin-left: 80px;
+}
+#INTI {
+    width: 80px;
+    height: auto;
+  }
+#AP, #MDPA{
+    width: 180px;
+    height: auto;
+}
+p{
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
 }

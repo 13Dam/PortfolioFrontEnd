@@ -9,13 +9,15 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-h3, h5{
-    display: inline;
+p{
+    font-family: Georgia, serif;
 }
-ul{
-    position: relative;
-    left:50px;
+p svg{
+    color: #606b72;
+    height: 28px;
+    width: 28px;
+    margin-right: 5px;
 }
-#experiencia{
-    padding: 15px;
+#mail, #ubicacion, #tel{
+    padding: 50px
 }
