@@ -9,13 +9,6 @@ h1{
     display: flex;
     justify-content: space-between;
 }
-h3, h5{
-    display: inline;
-}
-ul{
-    position: relative;
-    left:50px;
-}
 #experiencia{
     padding: 15px;
 }

@@ -69,7 +69,8 @@
         </li>
       </ul>
       <form class="d-flex">
-        <button class="btn btn-outline-light" type="submit">Ingresar</button>
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Ingresar</button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
       </form>
     </div>
   </div>

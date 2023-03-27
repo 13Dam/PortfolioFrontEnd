@@ -5,20 +5,29 @@
             <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
             </svg></h1>
     </div>
-    <div class="col-lg-11" id="experiencia">
-        <ul>
-            <li>
-                <h3>Dictado de clases</h3> - <h5>2020-2021</h5>
-                <p>Apoyo escolar a estudiantes de nivel primario y secundario.</p>
-            </li>
-        </ul>
+    <div class="text-center col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+            Nueva Experiencia
+        </button>
     </div>
-    <div class="col-lg-11">
-        <ul>
-            <li>
-                <h3>Dictado de clases</h3> - <h5>2021</h5>
-                <p>Clases particulares de lecto-comprensión a estudiantes universitarios.</p>
-            </li>
-        </ul>
+    <div class="d-flex justify-content-between col-lg-11">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td>
+                    <h3>{{Experiencia.nombreE}}</h3>
+                </td>
+                <td>{{Experiencia.descripcionE}}</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-dark" routerLink="/editexp/{{Experiencia.id}}">
+                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-secondary" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
     </div>
 </div>
